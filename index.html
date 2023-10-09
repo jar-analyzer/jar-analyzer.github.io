@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>Jar Analyzer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/1.css">
+<link rel="stylesheet" href="css/2.css">
+<link rel="stylesheet" href="css/3.css">
+<link rel="stylesheet" href="css/4.css">
+<script src="js/1.js" crossorigin="anonymous"></script>
+</head>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Poppins", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(to bottom right, #00ffb4, #9b05eb);
+  min-height: 100%;
+}
+
+#about {
+  background-color: #111111;
+  color: #999999;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+</style>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card w3-black w3-text-white" id="myNavbar">
+    <div class="w3-left w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+    </div>
+    <div class="w3-left w3-hide-small">
+      <a href="https://github.com/jar-analyzer/jar-analyzer/blob/master/README.md" class="w3-bar-item w3-button">Docs</a>
+    </div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="close()" class="w3-bar-item w3-button">About</a>
+  <a href="https://github.com/jar-analyzer/jar-analyzer/blob/master/README.md" onclick="close()" class="w3-bar-item w3-button">Docs</a>
+</nav>
+
+<header id="header" class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Jar Analyzer</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Jar Analyzer</span><br>
+    <span class="w3-large">A GUI Tool for Analyzing JAR</span>
+    <p><a href="https://github.com/jar-analyzer/jar-analyzer" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Get Started</a></p>
+  </div> 
+  <div style="position: absolute; top: 200px; left: 600px">
+    <img src="img.png" alt="Your Image" style="max-width: 90%">
+  </div>
+  <div class="w3-display-bottomleft w3-text-black w3-large" style="padding:24px 48px">
+    <a href="https://github.com/jar-analyzer/jar-analyzer"><i class="fab fa-github w3-hover-opacity"></i></a>
+  </div>
+</header>
+
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <div id="code-container"></div>
+  <h1 class="w3-center">About The Project</h2>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-third">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Quickly</p>
+      <p>Quickly build a database and analyze any Jar you have</p>
+    </div>
+    <div class="w3-third">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Convenient</p>
+      <p>Easy to get started, no need for too much experience to analyze</p>
+    </div>
+    <div class="w3-third">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Great GUI</p>
+      <p>A simple GUI can help achieve the functions you need</p>
+    </div>
+  </div>
+</div>
+
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#header" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://github.com/jar-analyzer/jar-analyzer"><i class="fab fa-github w3-hover-opacity"></i></a>
+  </div>
+  <p>Powered by Jar Analyzer Project</p>
+  <p class="w3-small">(c) Copyright of Jar Analyzer Project 2023 - 2023</p>
+</footer>
+ 
+<script>
+var mySidebar = document.getElementById("mySidebar");
+
+function open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+function close() {
+    mySidebar.style.display = "none";
+}
+</script>
+</body>
+</html>
