@@ -1,0 +1,112 @@
+{
+  "_readme": [
+    "站点动态信息配置：每次发版手动更新本文件即可（通常只改 release.version 与 release.date）",
+    "packages[].asset 中的 {v} 占位符会在渲染时替换为 release.version",
+    "asset 留空则该下载卡片回退为跳转 Release 页面"
+  ],
+  "release": {
+    "version": "6.2",
+    "date": "2026-08-23",
+    "totalVersions": 67,
+    "url": "https://github.com/jar-analyzer/jar-analyzer/releases/latest"
+  },
+  "stats": {
+    "zh": [
+      ["67+", "累计发布版本"],
+      ["6.2", "最新版本"],
+      ["100%", "开源免费"]
+    ],
+    "en": [
+      ["67+", "Released versions"],
+      ["6.2", "Latest release"],
+      ["100%", "Open and free"]
+    ]
+  },
+  "packages": [
+    {
+      "id": "windows-full",
+      "recommended": true,
+      "asset": "jar-analyzer-{v}-windows-full.zip",
+      "name": { "zh": "Windows 完整版", "en": "Windows Full" },
+      "desc": {
+        "zh": "内置 JRE 8 环境与启动脚本 解压即用（主要版本）",
+        "en": "Bundled JRE 8 and startup scripts. Ready to run."
+      }
+    },
+    {
+      "id": "windows-25",
+      "recommended": false,
+      "asset": "jar-analyzer-{v}-windows-25.zip",
+      "name": { "zh": "Windows JRE 25 版", "en": "Windows JRE 25" },
+      "desc": {
+        "zh": "内置 JRE 25 环境 未完全测试",
+        "en": "Bundled JRE 25. Not fully tested."
+      }
+    },
+    {
+      "id": "windows-system",
+      "recommended": false,
+      "asset": "jar-analyzer-{v}-windows-system.zip",
+      "name": { "zh": "Windows 系统 Java 版", "en": "Windows System JRE" },
+      "desc": {
+        "zh": "使用本机 JRE/JDK 推荐安装 Java 8",
+        "en": "Uses your local JRE/JDK. Java 8 recommended."
+      }
+    },
+    {
+      "id": "zip",
+      "recommended": false,
+      "asset": "jar-analyzer-{v}.zip",
+      "name": { "zh": "跨平台 zip 版", "en": "Cross-platform zip" },
+      "desc": {
+        "zh": "macOS / Linux 使用 java -jar 启动 注意 macOS 需 Java 11 以上",
+        "en": "macOS / Linux via java -jar. macOS requires Java 11+."
+      }
+    }
+  ],
+  "notes": {
+    "zh": [
+      "Windows 日常使用建议下载 windows-full 版本 解压后运行启动脚本",
+      "windows-system 版本需要本机已安装可用的 JRE/JDK 推荐 Java 8",
+      "macOS / Linux 用户使用 zip 版本 在终端执行 java -jar jar-analyzer.jar",
+      "macOS 强制要求 Java 11 以上 否则可能出现字符模糊和乱码",
+      "官方发布文件由 GitHub Actions 构建 建议优先使用最新 Release",
+      "使用 MCP 前 请先完成一次 JAR 分析并成功构建数据库"
+    ],
+    "en": [
+      "For daily Windows usage, download windows-full and run the extracted startup script.",
+      "windows-system requires a working local JRE/JDK; Java 8 is recommended.",
+      "macOS / Linux users should use the zip package and run java -jar jar-analyzer.jar.",
+      "macOS requires Java 11 or newer to avoid blurry or garbled fonts.",
+      "Official release files are built by GitHub Actions; use the latest Release first.",
+      "Before using MCP, finish one JAR analysis and build the database successfully."
+    ]
+  },
+  "mcp": {
+    "sse": "SSE: http://127.0.0.1:20032/sse",
+    "http": "HTTP: http://127.0.0.1:20032/mcp"
+  },
+  "links": {
+    "repo": "https://github.com/jar-analyzer/jar-analyzer",
+    "docs": "https://docs.qq.com/doc/DV3pKbG9GS0pJS0tk",
+    "changelog": "https://github.com/jar-analyzer/jar-analyzer/blob/master/CHANGELOG.MD",
+    "issues": "https://github.com/jar-analyzer/jar-analyzer/issues"
+  },
+  "_acknowledgements_readme": "致谢名单为 GitHub 用户名数组 头像与主页由用户名自动生成",
+  "acknowledgements": [
+    "4ra1n",
+    "whwlsfb",
+    "0cat-r",
+    "Gosiu",
+    "ly-test-fuzz",
+    "AII12754",
+    "sensensen404",
+    "MyDynasty",
+    "TianMing2018",
+    "R0ser1",
+    "su18",
+    "7-e1even",
+    "L-codes",
+    "osword"
+  ]
+}
