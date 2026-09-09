@@ -92,6 +92,15 @@
     "changelog": "https://github.com/jar-analyzer/jar-analyzer/blob/master/CHANGELOG.MD",
     "issues": "https://github.com/jar-analyzer/jar-analyzer/issues"
   },
+  "jsd": {
+    "name": "jsd",
+    "description": {
+      "zh": "jsd 是 Jar Analyzer 下一代底层引擎，以纯 TypeScript 实现 Java 反编译，将 .class 字节码还原为 Java 源码。单文件库，无需 WebAssembly 或原生依赖，可在浏览器和 Node.js 中使用，也可通过在线 Demo 直接体验。",
+      "en": "jsd is the engine powering the next generation of Jar Analyzer. Written entirely in TypeScript, it decompiles .class bytecode into Java source. A single-file library with no WebAssembly or native dependencies, available in browsers and Node.js. Try it directly in the online demo."
+    },
+    "github": "https://github.com/jar-analyzer/jsd",
+    "demo": "https://jar-analyzer.github.io/jsd/"
+  },
   "_acknowledgements_readme": "致谢名单为 GitHub 用户名数组 头像与主页由用户名自动生成",
   "acknowledgements": [
     "4ra1n",
