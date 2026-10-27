@@ -5,20 +5,20 @@
     "asset 留空则该下载卡片回退为跳转 Release 页面"
   ],
   "release": {
-    "version": "6.2",
-    "date": "2026-08-23",
-    "totalVersions": 67,
+    "version": "6.3",
+    "date": "2026-10-28",
+    "totalVersions": 68,
     "url": "https://github.com/jar-analyzer/jar-analyzer/releases/latest"
   },
   "stats": {
     "zh": [
-      ["67+", "累计发布版本"],
-      ["6.2", "最新版本"],
+      ["68+", "累计发布版本"],
+      ["6.3", "最新版本"],
       ["100%", "开源免费"]
     ],
     "en": [
-      ["67+", "Released versions"],
-      ["6.2", "Latest release"],
+      ["68+", "Released versions"],
+      ["6.3", "Latest release"],
       ["100%", "Open and free"]
     ]
   },
@@ -116,6 +116,7 @@
     "su18",
     "7-e1even",
     "L-codes",
-    "osword"
+    "osword",
+    "ssrsec"
   ]
 }
